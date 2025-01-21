@@ -32,9 +32,7 @@
               <svg class="header-icon" width="20" height="20">
                 <use href="/img/symbol-defs.svg#icon-location-icon"></use>
               </svg>
-              <a
-                href="City Name, Your Street, 99"
-                class="header-adress-list-items"
+              <a href="#" class="header-adress-list-items"
                 >City Name, Your Street, 99</a
               >
             </li>
@@ -70,8 +68,6 @@
           </svg>
         </button>
       </div>
-
-      <!-----------Mob-menu----------->
 
       <div class="mobile-menu" data-menu>
         <div class="container mobile-menu-container">
@@ -145,9 +141,7 @@
                 <svg class="header-icon" width="25" height="25">
                   <use href="/img/symbol-defs.svg#icon-location-icon"></use>
                 </svg>
-                <a
-                  href="City Name, Your Street, 99"
-                  class="menu-adress-list-items"
+                <a href="#" class="menu-adress-list-items"
                   >City Name, Your Street, 99</a
                 >
               </li>
@@ -162,9 +156,9 @@
         <div class="container hero-container">
           <div class="hero-block">
             <h1 class="hero-title">craft beer production</h1>
-            <a href="#beer"
-              ><button type="button" class="hero-button">catalog</button></a
-            >
+            ><button type="button" class="hero-button">
+              <a href="#beer" class="btn-link">catalog</a>
+            </button>
           </div>
         </div>
       </section>
@@ -252,6 +246,7 @@
 
       <section class="bonus" id="bonus">
         <div class="container bonus-container">
+          <h3 class="visually-hidden">title</h3>
           <ul class="bonus-list">
             <li class="bonus-item">
               <div class="bonus-icon-container">
@@ -266,7 +261,7 @@
               </div>
             </li>
             <li class="bonus-item">
-              <dev class="bonus-icon-container">
+              <div class="bonus-icon-container">
                 <svg class="bonus-icon" width="111" height="132">
                   <use href="/img/symbol-defs.svg#icon-car-icon"></use>
                 </svg>
@@ -275,7 +270,7 @@
                   penatibus malesuada. Quisque elit sollicitudin imperdiet ut
                   gravida.
                 </p>
-              </dev>
+              </div>
             </li>
             <li class="bonus-item">
               <div class="bonus-icon-container">
@@ -313,8 +308,8 @@
               <label>
                 <input
                   type="text"
-                  name=""
-                  id=""
+                  name="text-input"
+                  id="input-text"
                   placeholder="Your name*"
                   class="request-input"
                 />
@@ -329,23 +324,28 @@
               <label>
                 <input
                   type="tel"
-                  name=""
-                  id=""
+                  name="tel-input"
+                  id="input-tel"
                   placeholder="Your phone"
                   class="request-input"
                 />
               </label>
             </form>
-            <form action="" class="request-textarea-form">
+            <form class="request-textarea-form">
               <textarea
-                name=""
-                id=""
+                name="textarea-form"
+                id="textarea"
                 placeholder="Your message"
                 class="request-textarea"
               ></textarea>
             </form>
             <div class="request-text-check">
-              <input type="checkbox" name="" id="" class="request-checkbox" />
+              <input
+                type="checkbox"
+                name="input-check"
+                id="checkbox"
+                class="request-checkbox"
+              />
               <p class="request-text">
                 You accept the terms of the
                 <span class="request-span-text">privacy policy</span>
@@ -451,6 +451,7 @@
 
       <section class="slider-section">
         <div class="container">
+          <h3 class="visually-hidden">title</h3>
           <div class="slider">
             <button class="slider-btn prev-btn">←</button>
             <div class="slider-wrapper">
@@ -471,7 +472,7 @@
                   class="slider-img"
                 />
                 <img
-                  src="/img/slider-beer=1.jpg"
+                  src="/img/slider-beer-1.jpg"
                   alt="Slide 4"
                   class="slider-img"
                 />
@@ -565,9 +566,7 @@
                 <svg class="header-icon" width="20" height="20">
                   <use href="/img/symbol-defs.svg#icon-location-icon"></use>
                 </svg>
-                <a
-                  href="City Name, Your Street, 99"
-                  class="footer-adress-list-items"
+                <a href="#" class="footer-adress-list-items"
                   >City Name, Your Street, 99</a
                 >
               </li>
