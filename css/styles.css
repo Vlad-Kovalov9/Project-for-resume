@@ -848,7 +848,7 @@ img {
 .about {
     padding-top: 70px;
     padding-bottom: 100px;
-    background-image: url(/img/textureImg.jpg);
+    background-image: url(../img/texture-img.jpg);
 }
 
 .about-title {
