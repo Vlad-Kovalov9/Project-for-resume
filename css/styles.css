@@ -226,6 +226,10 @@ img {
     text-transform: uppercase;
 }
 
+.inst-icon {
+    fill: pink;
+}
+
 @media screen and (max-width: 970px) {
     .container {
         width: 375px;
