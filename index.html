@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BEER</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Prociono&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <address class="header-address">
+          <ul class="header-address-list">
+            <li class="header-address-item">
+              <svg class="header-icon" width="20" height="20">
+                <use href="/img/symbol-defs.svg#icon-mail-icon"></use>
+              </svg>
+              <a
+                href="mailto:yourmail@mail.com"
+                class="header-adress-list-items"
+                >yourmail@mail.com</a
+              >
+            </li>
+            <li class="header-address-item">
+              <svg class="header-icon" width="20" height="20">
+                <use href="/img/symbol-defs.svg#icon-location-icon"></use>
+              </svg>
+              <a
+                href="City Name, Your Street, 99"
+                class="header-adress-list-items"
+                >City Name, Your Street, 99</a
+              >
+            </li>
+          </ul>
+        </address>
+        <nav class="header-nav">
+          <img
+            src="./img/header-logo.png"
+            alt="header-logo"
+            class="header-logo"
+          />
+          <ul class="header-list">
+            <li class="nav-item">
+              <a href="#" class="header-list-item item-home">home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#beer" class="header-list-item">our beer</a>
+            </li>
+            <li class="nav-item">
+              <a href="#news" class="header-list-item">news</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="header-list-item">about us</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="header-list-item">where to buy</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="burger-btn" type="submit" data-menu-open>
+          <svg class="burger-icon" width="40" height="40">
+            <use href="/img/symbol-defs.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-----------Mob-menu----------->
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close" data-menu-close>
+            <svg class="menu-close-icon" width="10" height="10">
+              <use href="./img/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="menu-list">
+              <li class="menu-list-item">
+                <a href="" class="menu-list-link">home</a>
+              </li>
+              <li class="menu-list-item">
+                <a href="" class="menu-list-link">our beer</a>
+              </li>
+              <li class="menu-list-item">
+                <a href="" class="menu-list-link">news</a>
+              </li>
+              <li class="menu-list-item">
+                <a href="" class="menu-list-link">about us</a>
+              </li>
+              <li class="menu-list-item">
+                <a href="" class="menu-list-link">where to buy</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="menu-social-list">
+            <li class="menu-social-icons">
+              <a href="" class="icon-link">
+                <svg class="team-soc-icons" width="35" height="35">
+                  <use href="/img/symbol-defs.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-social-icons">
+              <a href="" class="icon-link">
+                <svg class="team-soc-icons" width="35" height="35">
+                  <use href="/img/symbol-defs.svg#icon-tik-tok"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-social-icons">
+              <a href="" class="icon-link">
+                <svg class="team-soc-icons" width="35" height="35">
+                  <use href="img/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-social-icons">
+              <a href="" class="icon-link inst-icon">
+                <svg class="team-soc-icons" width="35" height="35">
+                  <use href="./img/symbol-defs.svg#icon-insta"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <address class="menu-address">
+            <ul class="menu-address-list">
+              <li class="menu-address-item">
+                <svg class="header-icon" width="25" height="25">
+                  <use href="/img/symbol-defs.svg#icon-mail-icon"></use>
+                </svg>
+                <a
+                  href="mailto:yourmail@mail.com"
+                  class="menu-adress-list-items"
+                  >yourmail@mail.com</a
+                >
+              </li>
+              <li class="header-address-item">
+                <svg class="header-icon" width="25" height="25">
+                  <use href="/img/symbol-defs.svg#icon-location-icon"></use>
+                </svg>
+                <a
+                  href="City Name, Your Street, 99"
+                  class="menu-adress-list-items"
+                  >City Name, Your Street, 99</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-container">
+          <div class="hero-block">
+            <h1 class="hero-title">craft beer production</h1>
+            <a href="#beer"
+              ><button type="button" class="hero-button">catalog</button></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="beer" id="beer">
+        <div class="container">
+          <h2 class="beer-title">our beer</h2>
+          <ul class="beer-list">
+            <li class="kind-of-beer">
+              <img
+                src="./img/beer-1.jpg"
+                alt="name of beer"
+                width="460"
+                height="280"
+                class="beer-img"
+              />
+              <div class="container-beer">
+                <h3 class="beer-subtitle">Beer Name</h3>
+                <p class="beer-subtitle-test">
+                  Lorem ipsum dolor sit amet consectetur. Turpis vel montes
+                  penatibus malesuada. Quisque elit sollicitudin imperdiet ut
+                  gravida.
+                </p>
+                <button type="button" class="beer-btn">more details</button>
+              </div>
+            </li>
+            <li class="kind-of-beer">
+              <img
+                src="./img/beer-2.jpg"
+                alt="name of beer"
+                width="460"
+                height="280"
+                class="beer-img"
+              />
+              <div class="container-beer">
+                <h3 class="beer-subtitle">Beer Name</h3>
+                <p class="beer-subtitle-test">
+                  Lorem ipsum dolor sit amet consectetur. Turpis vel montes
+                  penatibus malesuada. Quisque elit sollicitudin imperdiet ut
+                  gravida.
+                </p>
+                <button type="button" class="beer-btn">more details</button>
+              </div>
+            </li>
+            <li class="kind-of-beer">
+              <img
+                src="./img/beer-3.jpg"
+                alt="name of beer"
+                width="460"
+                height="280"
+                class="beer-img"
+              />
+              <div class="container-beer">
+                <h3 class="beer-subtitle">Beer Name</h3>
+                <p class="beer-subtitle-test">
+                  Lorem ipsum dolor sit amet consectetur. Turpis vel montes
+                  penatibus malesuada. Quisque elit sollicitudin imperdiet ut
+                  gravida.
+                </p>
+                <button type="button" class="beer-btn">more details</button>
+              </div>
+            </li>
+            <li class="kind-of-beer">
+              <img
+                src="./img/beer-4.jpg"
+                alt="name of beer"
+                width="460"
+                height="280"
+                class="beer-img"
+              />
+              <div class="container-beer">
+                <h3 class="beer-subtitle">Beer Name</h3>
+                <p class="beer-subtitle-test">
+                  Lorem ipsum dolor sit amet consectetur. Turpis vel montes
+                  penatibus malesuada. Quisque elit sollicitudin imperdiet ut
+                  gravida.
+                </p>
+                <button type="button" class="beer-btn">more details</button>
+              </div>
+            </li>
+          </ul>
+          <button type="button" class="beer-catalog">All catalog</button>
+        </div>
+      </section>
+
+      <section class="bonus" id="bonus">
+        <div class="container bonus-container">
+          <ul class="bonus-list">
+            <li class="bonus-item">
+              <div class="bonus-icon-container">
+                <svg class="bonus-icon" width="87" height="132">
+                  <use href="/img/symbol-defs.svg#icon-list-icon"></use>
+                </svg>
+                <p class="bonus-text">
+                  Lorem ipsum dolor sit amet consectetur. Turpis vel montes
+                  penatibus malesuada. Quisque elit sollicitudin imperdiet ut
+                  gravida.
+                </p>
+              </div>
+            </li>
+            <li class="bonus-item">
+              <dev class="bonus-icon-container">
+                <svg class="bonus-icon" width="111" height="132">
+                  <use href="/img/symbol-defs.svg#icon-car-icon"></use>
+                </svg>
+                <p class="bonus-text">
+                  Lorem ipsum dolor sit amet consectetur. Turpis vel montes
+                  penatibus malesuada. Quisque elit sollicitudin imperdiet ut
+                  gravida.
+                </p>
+              </dev>
+            </li>
+            <li class="bonus-item">
+              <div class="bonus-icon-container">
+                <svg class="bonus-icon" width="114" height="122">
+                  <use href="/img/symbol-defs.svg#icon-bottle-icon"></use>
+                </svg>
+                <p class="bonus-text">
+                  Lorem ipsum dolor sit amet consectetur. Turpis vel montes
+                  penatibus malesuada. Quisque elit sollicitudin imperdiet ut
+                  gravida.
+                </p>
+              </div>
+            </li>
+            <li class="bonus-item">
+              <div class="bonus-icon-container">
+                <svg class="bonus-icon" width="105" height="116">
+                  <use href="/img/symbol-defs.svg#icon-chek-icon"></use>
+                </svg>
+                <p class="bonus-text">
+                  Lorem ipsum dolor sit amet consectetur. Turpis vel montes
+                  penatibus malesuada. Quisque elit sollicitudin imperdiet ut
+                  gravida.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="request">
+        <div class="container">
+          <h2 class="request-title">leave a request</h2>
+          <div class="request-data">
+            <form class="request-input-form">
+              <label>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Your name*"
+                  class="request-input"
+                />
+              </label>
+              <label>
+                <input
+                  type="email"
+                  placeholder="Your mail*"
+                  class="request-input"
+                />
+              </label>
+              <label>
+                <input
+                  type="tel"
+                  name=""
+                  id=""
+                  placeholder="Your phone"
+                  class="request-input"
+                />
+              </label>
+            </form>
+            <form action="" class="request-textarea-form">
+              <textarea
+                name=""
+                id=""
+                placeholder="Your message"
+                class="request-textarea"
+              ></textarea>
+            </form>
+            <div class="request-text-check">
+              <input type="checkbox" name="" id="" class="request-checkbox" />
+              <p class="request-text">
+                You accept the terms of the
+                <span class="request-span-text">privacy policy</span>
+              </p>
+            </div>
+            <button type="button" class="request_btn">send</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="news" id="news">
+        <div class="container">
+          <h1 class="news-title">news</h1>
+          <ul class="news-list">
+            <li class="news-item">
+              <img src="/img/news1.jpg" alt="news1" class="requst-img" />
+              <p class="news-data">20.03.2024</p>
+              <p class="news-text">
+                Lorem ipsum dolor sit amet consectetur. Turpis vel montes
+                penatibus malesuada. Quisque elit sollicitudin imperdiet.
+              </p>
+            </li>
+            <li class="news-item">
+              <img src="/img/news2.jpg" alt="news2" class="requst-img" />
+              <p class="news-data">25.03.2024</p>
+              <p class="news-text">
+                Lorem ipsum dolor sit amet consectetur. Turpis vel montes
+                penatibus malesuada. Quisque elit sollicitudin imperdiet.
+              </p>
+            </li>
+            <li class="news-item">
+              <img src="/img/news3.jpg" alt="news3" class="requst-img" />
+              <p class="news-data">10.04.2024</p>
+              <p class="news-text">
+                Lorem ipsum dolor sit amet consectetur. Turpis vel montes
+                penatibus malesuada. Quisque elit sollicitudin imperdiet.
+              </p>
+            </li>
+            <li class="news-item">
+              <img src="/img/news4.jpg" alt="news4" class="requst-img" />
+              <p class="news-data">20.04.2024</p>
+              <p class="news-text">
+                Lorem ipsum dolor sit amet consectetur. Turpis vel montes
+                penatibus malesuada. Quisque elit sollicitudin imperdiet.
+              </p>
+            </li>
+            <li class="news-item">
+              <img src="/img/news5.jpg" alt="news5" class="requst-img" />
+              <p class="news-data">25.04.2024</p>
+              <p class="news-text">
+                Lorem ipsum dolor sit amet consectetur. Turpis vel montes
+                penatibus malesuada. Quisque elit sollicitudin imperdiet.
+              </p>
+            </li>
+            <li class="news-item">
+              <img src="/img/news6.jpg" alt="news6" class="requst-img" />
+              <p class="news-data">30.04.2024</p>
+              <p class="news-text">
+                Lorem ipsum dolor sit amet consectetur. Turpis vel montes
+                penatibus malesuada. Quisque elit sollicitudin imperdiet.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="container">
+          <h2 class="about-title">about us</h2>
+          <div class="about-text">
+            <p class="about-subtitle">
+              Lorem ipsum dolor sit amet consectetur. Nisi fames et phasellus
+              pharetra est posuere sagittis tristique. Nunc ut dui cursus vel
+              turpis fermentum mattis. Facilisi vel fusce mauris sit odio id sem
+              semper vulputate. In consequat ut odio arcu at in ultricies. Augue
+              elit lectus nam odio sed ac habitasse. Viverra at neque consequat
+              mauris amet velit. At leo suspendisse nulla nullam aliquam. Rutrum
+              proin lacus eget convallis interdum semper accumsan. Eget faucibus
+              etiam dolor vulputate diam aenean diam sed elementum. Quisque
+              ullamcorper enim ipsum nisi rutrum volutpat elementum. Facilisis
+              vitae dictumst sit non pellentesque pretium morbi. Mi purus tortor
+              diam pretium. Turpis phasellus sit condimentum pulvinar lacus. Sem
+              ut pulvinar non eu vestibulum amet ante. Hac cursus scelerisque
+              augue integer.
+            </p>
+
+            <p class="about-subtitle">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Explicabo sequi saepe debitis repellat dolores in deleniti et ut,
+              qui unde atque iure, ab quibusdam nisi doloribus hic aut omnis
+              cumque. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Doloribus, at. Distinctio vero blanditiis laudantium, ea eaque
+              porro fugiat, repellendus quia maiores quas incidunt quibusdam
+              assumenda odit! Necessitatibus magni molestiae enim? Lorem ipsum
+              dolor sit amet consectetur, adipisicing elit. Iusto dolorem
+              tempora adipisci numquam aspernatur aperiam aliquam porro, soluta
+              distinctio ab ipsum reiciendis, maiores nihil! Assumenda
+              laboriosam praesentium ducimus quasi officiis?
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="slider-section">
+        <div class="container">
+          <div class="slider">
+            <button class="slider-btn prev-btn">←</button>
+            <div class="slider-wrapper">
+              <div class="slider-items">
+                <img
+                  src="/img/beer-foto.jpg"
+                  alt="Slide 1"
+                  class="slider-img"
+                />
+                <img
+                  src="/img/slider-beer3.jpg"
+                  alt="Slide 2"
+                  class="slider-img"
+                />
+                <img
+                  src="/img/slider-beer.jpg"
+                  alt="Slide 3"
+                  class="slider-img"
+                />
+                <img
+                  src="/img/slider-beer1.jpg"
+                  alt="Slide 4"
+                  class="slider-img"
+                />
+              </div>
+            </div>
+            <button class="slider-btn next-btn">→</button>
+            <div class="slider-dots"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="buy">
+        <div class="container">
+          <h2 class="buy-title">where to buy</h2>
+        </div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24302.55703650674!2d-0.14361263092066757!3d51.51561724757626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b32972e054f%3A0x18d6dc1ed1ed5419!2sCoral%20Bookmakers!5e0!3m2!1sen!2suk!4v1615214419482!5m2!1sen!2suk"
+            frameborder="0"
+            width="940"
+            height="530"
+            class="map-location"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <img
+          src="./img/header-logo.png"
+          alt="header-logo"
+          class="footer-logo"
+          width="190"
+          height="80"
+        />
+
+        <ul class="footer-list">
+          <li class="nav-item">
+            <a href="#" class="footer-list-item">home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#beer" class="footer-list-item">our beer</a>
+          </li>
+          <li class="nav-item">
+            <a href="#news" class="footer-list-item">news</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="footer-list-item">about us</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="footer-list-item">where to buy</a>
+          </li>
+        </ul>
+
+        <div class="footer-nav">
+          <ul class="menu-social-list">
+            <li class="menu-social-icons">
+              <a href="" class="icon-link">
+                <svg class="footer-soc-icons" width="30" height="30">
+                  <use href="/img/symbol-defs.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-social-icons">
+              <a href="" class="icon-link">
+                <svg class="footer-soc-icons" width="30" height="30">
+                  <use href="/img/symbol-defs.svg#icon-tik-tok"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-social-icons">
+              <a href="" class="icon-link">
+                <svg class="footer-soc-icons" width="30" height="30">
+                  <use href="img/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="menu-social-icons">
+              <a href="" class="icon-link inst-icon">
+                <svg class="footer-soc-icons" width="30" height="30">
+                  <use href="./img/symbol-defs.svg#icon-insta"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <address class="footer-address">
+            <ul class="footer-address-list">
+              <li class="footer-address-item">
+                <svg class="header-icon" width="20" height="20">
+                  <use href="/img/symbol-defs.svg#icon-location-icon"></use>
+                </svg>
+                <a
+                  href="City Name, Your Street, 99"
+                  class="footer-adress-list-items"
+                  >City Name, Your Street, 99</a
+                >
+              </li>
+              <li class="footer-address-item">
+                <svg class="header-icon" width="20" height="20">
+                  <use href="/img/symbol-defs.svg#icon-mail-icon"></use>
+                </svg>
+                <a
+                  href="mailto:yourmail@mail.com"
+                  class="footer-adress-list-items"
+                  >yourmail@mail.com</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/slider.js" defer></script>
+    <script src="/js/menu.js" defer></script>
+  </body>
+</html>
